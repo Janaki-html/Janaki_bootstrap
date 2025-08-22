@@ -1,0 +1,15 @@
+show databases;
+create database sathyabama;
+use sathyabama;
+create table eee(
+sid int,
+sname varchar(30),
+smarks int
+);
+show tables from sathyabama;
+desc eee;
+insert into eee values(1001,'janaki',100),(1002,'janu',101);
+alter table eee add
+semial varchar(25);
+insert into eee values(1000,'papin',100,'janakinanu26@gmail.com');
+select * from eee;
