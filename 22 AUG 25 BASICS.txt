@@ -1,0 +1,38 @@
+SHOW DATABASES;
+
+CREATE DATABASE IF NOT EXISTS sathy;
+USE sathy;
+
+DROP TABLE IF EXISTS eee;
+
+CREATE TABLE eee (
+    sid INT,
+    sname VARCHAR(30),
+    smarks INT
+);
+
+SHOW TABLES FROM sathy;
+DESC eee;
+
+INSERT INTO eee VALUES (1001,'janaki',100);
+SELECT * FROM eee;
+
+ALTER TABLE eee ADD semail VARCHAR(30);
+
+INSERT INTO eee VALUES (1002,'janu',102,'janakinanu26@gmail.com');
+
+ALTER TABLE eee DROP COLUMN semail;
+UPDATE eee
+SET smarks = 99
+WHERE sid = 1001;
+alter table eee add
+sphone int8;
+insert into eee values(1003,'jan',98,9843029634);
+alter table eee rename column sphone to phone ;
+alter table eee add
+slocation varchar(30);
+insert into eee values(1004,'papin',105,8778735336,'india');
+SELECT * FROM eee;
+update eee set slocation ='Japan'
+where sid=1001; 
+update eee set smarks=smarks+1;
